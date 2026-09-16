@@ -1,0 +1,37 @@
+WINDOWS: START TO END
+
+1. Right-click the downloaded ZIP and select Extract All.
+2. Open the extracted Stockable-Warehouse-Project folder.
+3. Open Command Prompt and check:
+   java -version
+   javac -version
+   Both must work. Use a JDK 17 or newer.
+   If javac is missing, install a Windows JDK for your processor architecture
+   from an official vendor (for example Eclipse Adoptium).
+   Enable Add to PATH during setup, then reopen Command Prompt.
+4. Double-click run.bat in the extracted project folder.
+   It compiles and runs the project. Do not run it from inside the ZIP viewer.
+5. Enter WH101, Keyboard, 20, 10 when prompted (Enter after each).
+6. Menu 1: details; 2: restock; 3: issue units; 4: exit.
+
+MANUAL RUN
+Open the project folder in File Explorer, type cmd in its address bar,
+and press Enter. Run these commands separately:
+javac -d out src/Stockable.java src/WarehouseItem.java src/Main.java
+java -cp out Main
+
+GITHUB UPLOAD
+1. Sign in at https://github.com and open https://github.com/new
+2. Name: Stockable-Warehouse-Project
+3. Choose Public if your college requires a publicly accessible link.
+4. Create the repository without initializing extra files.
+5. Select uploading an existing file on the empty repository page.
+6. Drag src (the entire folder), README.md, START-HERE.txt, run.bat,
+   and .gitignore into the upload area. Do not upload out or the ZIP.
+   Browser uploads do not automatically apply .gitignore filters.
+7. Verify src/Main.java, src/Stockable.java and src/WarehouseItem.java
+   appear with the src/ folder path.
+8. Commit message: Add Stockable warehouse inventory project
+9. Click Commit changes and copy your repository URL for submission.
+
+GitHub stores the source; run this console program on your computer.
